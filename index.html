@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Young Comet Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="header-logo">
+        <img src="./assets/Group 76.svg" alt="" class="header-logo-icon" draggable="false" />
+        <img src="./assets/Young Comet.svg" alt="Young Comet" class="header-logo-text" draggable="false" />
+      </a>
+      <button class="header-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#" class="header-nav-link">Home</a>
+        <a href="#" class="header-nav-link">About Us</a>
+        <a href="#" class="header-nav-link">Team</a>
+        <a href="#" class="header-nav-link">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <!-- Glow: full-width behind everything -->
+      <div class="hero-glow" aria-hidden="true">
+        <span class="glow-layer glow-layer-1"></span>
+        <span class="glow-layer glow-layer-2"></span>
+        <span class="glow-layer glow-layer-3"></span>
+        <span class="glow-layer glow-layer-4"></span>
+        <span class="glow-layer glow-layer-5"></span>
+      </div>
+
+      <!-- Mobile-only hero images -->
+      <div class="hero-mobile-only" aria-hidden="true">
+        <img src="./assets/Group 84.svg" alt="" class="hero-mobile-img" draggable="false" />
+        <img src="./assets/Group 81.svg" alt="" class="hero-mobile-img" draggable="false" />
+      </div>
+
+      <div class="hero-canvas">
+        <!-- left card -->
+        <img class="hero-asset hero-card hero-card-left hero-box-svg" src="./assets/box.svg" alt="Pre-incubators"
+          draggable="false" />
+
+        <!-- right card -->
+        <img class="hero-asset hero-card hero-card-right hero-comet-svg" src="./assets/comett.svg"
+          alt="Comet problem-solvers" draggable="false" />
+
+        <!-- left arrow image -->
+        <img class="hero-asset hero-arrow hero-arrow-left" src="./assets/Vector 48 (1).svg" alt="Left curved arrow"
+          draggable="false" />
+
+        <!-- right arrow image -->
+        <img class="hero-asset hero-arrow hero-arrow-right" src="./assets/Vector 48.svg" alt="Right curved arrow"
+          draggable="false" />
+
+        <!-- hero text -->
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-title reveal-up delay-2">
+            We are <span class="text-orange">pre-incubating</span>
+            <span class="serif-italic">comets</span><br />
+            to take over the <span class="text-blue">universe.</span>
+          </h1>
+          <p class="hero-subtitle reveal-up delay-3">
+            launchpad for ambitious high-schoolers
+          </p>
+          <a href="#" class="cta-button reveal-up delay-4">
+            <span class="cta-text">Be a </span>
+            <span class="cta-accent">Comet</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="intro section-shell" aria-labelledby="intro-title">
+      <div class="intro-canvas">
+        <div class="intro-content reveal-up">
+          <h2 id="intro-title" class="intro-title">
+            <img class="intro-title-image" src="./assets/Group 19.svg"
+              alt="Built for high-schoolers designed by IIM students" draggable="false" />
+          </h2>
+
+          <p class="intro-copy">
+            3 month experiential learning program to create thinkers, builders
+            and explorers, making students ready for future success.
+          </p>
+
+          <a href="#" class="cohort-badge">
+            <span class="cohort-icon" aria-hidden="true">
+              <svg class="cohort-icon-arrow" viewBox="0 0 20 24" role="presentation">
+                <polyline points="3,3 16,12 3,21"></polyline>
+              </svg>
+            </span>
+            <span>Cohort 2.0</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tracks-section" aria-labelledby="tracks-title">
+      <div class="tracks-bg" aria-hidden="true"></div>
+      <div class="tracks-overlay" aria-hidden="true"></div>
+
+      <div class="tracks-frame">
+        <div class="tracks-content">
+          <h2 id="tracks-title" class="tracks-title">
+            Build <span class="tracks-title-italic">AI-Integrated</span>
+            <span class="tracks-title-underlined">Portfolio Project</span><br />
+            Choose from 3 Real-World Tracks
+          </h2>
+
+          <p class="tracks-copy">
+            Choose your <span class="tracks-copy-highlight">direction</span>. Build real
+            <span class="tracks-copy-highlight">projects</span>. Add valuable projects to your
+            <span class="tracks-copy-highlight">profile</span>, not just certificates.<br />
+            At Young Comet, students build AI-integrated portfolio projects that show how they think,
+            solve, and create - long before college or work. Across three real-world tracks, they turn
+            ideas into action and learning into proof.
+          </p>
+
+          <div class="tracks-cards" aria-label="Available project tracks">
+            <article class="track-card track-card--light track-card--research">
+              <h3 class="track-card-title">Research &amp; Development</h3>
+              <p class="track-card-copy">
+                Build real solutions to real problems and turn your ideas into venture-ready,
+                portfolio-worthy projects.
+              </p>
+              <!-- Card image path (swap image here if needed) -->
+              <img class="track-card-image" src="./assets/Rectangle 50.svg" alt="Research and development track"
+                draggable="false" />
+            </article>
+
+            <article class="track-card track-card--featured track-card--entrepreneurship">
+              <h3 class="track-card-title">Entrepreneurship</h3>
+              <p class="track-card-copy">
+                Use AI to explore complex problems and create research-driven projects that showcase
+                deep thinking and innovation.
+              </p>
+              <!-- Card image path (swap image here if needed) -->
+              <img class="track-card-image" src="./assets/Rectangle 49.svg" alt="Entrepreneurship track"
+                draggable="false" />
+            </article>
+
+            <article class="track-card track-card--light track-card--nonprofit">
+              <h3 class="track-card-title">Non-profit Initiative</h3>
+              <p class="track-card-copy">
+                Design solutions for social and environmental challenges and build projects that
+                create measurable real-world impact.
+              </p>
+              <!-- Card image path (swap image here if needed) -->
+              <img class="track-card-image" src="./assets/Rectangle 48.svg" alt="Non-profit initiative track"
+                draggable="false" />
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pathway-section" aria-labelledby="pathway-title">
+      <div class="pathway-frame">
+        <div class="pathway-header">
+          <p class="pathway-kicker">
+            How we make this possible and <span class="pathway-kicker-highlight">impactful</span>?
+          </p>
+
+          <h2 id="pathway-title" class="pathway-title">
+            Structured Learning that instills Competencies
+          </h2>
+
+          <p class="pathway-summary">
+            <span class="pathway-summary-highlight">Bridging the gap between schools and the real world,</span><br />
+            <span>Young Comet help students take their first serious step</span><br />
+            <span>forward towards a successful future.</span>
+          </p>
+        </div>
+
+        <div class="pathway-visual" aria-hidden="true">
+          <!-- Curve path (swap to an asset in CSS/HTML if you export one from Figma) -->
+          <svg class="pathway-curve" viewBox="0 0 1200 320" role="presentation">
+            <path
+              d="M70 292 C190 284, 278 274, 372 246 C463 218, 552 170, 648 154 C748 138, 835 144, 932 126 C1012 112, 1060 82, 1116 24" />
+          </svg>
+
+          <div class="milestone milestone--1">
+            <span class="milestone-dot milestone-dot--blue"></span>
+            <p class="milestone-title">Exposure &amp; Competency Development</p>
+            <p class="milestone-week">Week 1-4</p>
+          </div>
+
+          <div class="milestone milestone--2">
+            <span class="milestone-dot milestone-dot--orange"></span>
+            <p class="milestone-title">Sprint Week</p>
+            <p class="milestone-week">Week 5</p>
+          </div>
+
+          <div class="milestone milestone--3">
+            <span class="milestone-dot milestone-dot--blue"></span>
+            <p class="milestone-title">Mentor-led AI Development Phase</p>
+            <p class="milestone-week">Week 6-10</p>
+          </div>
+
+          <div class="milestone milestone--4">
+            <span class="milestone-dot milestone-dot--orange"></span>
+            <p class="milestone-title">National AI Innovation Competition</p>
+            <p class="milestone-week">Week 11</p>
+          </div>
+
+          <div class="milestone milestone--final">
+            <span class="milestone-dot milestone-dot--blue"></span>
+            <p class="milestone-title">Industry Internship</p>
+            <p class="milestone-week">Only for winners</p>
+          </div>
+        </div>
+
+        <div class="pathway-mobile" aria-label="Learning pathway milestones">
+          <div class="pathway-mobile-item">
+            <span class="milestone-dot milestone-dot--blue"></span>
+            <div>
+              <p class="pathway-mobile-title">Exposure &amp; Competency Development</p>
+              <p class="pathway-mobile-week">Week 1-4</p>
+            </div>
+          </div>
+
+          <div class="pathway-mobile-item">
+            <span class="milestone-dot milestone-dot--orange"></span>
+            <div>
+              <p class="pathway-mobile-title">Sprint Week</p>
+              <p class="pathway-mobile-week">Week 5</p>
+            </div>
+          </div>
+
+          <div class="pathway-mobile-item">
+            <span class="milestone-dot milestone-dot--blue"></span>
+            <div>
+              <p class="pathway-mobile-title">Mentor-led AI Development Phase</p>
+              <p class="pathway-mobile-week">Week 6-10</p>
+            </div>
+          </div>
+
+          <div class="pathway-mobile-item">
+            <span class="milestone-dot milestone-dot--orange"></span>
+            <div>
+              <p class="pathway-mobile-title">National AI Innovation Competition</p>
+              <p class="pathway-mobile-week">Week 11</p>
+            </div>
+          </div>
+
+          <div class="pathway-mobile-item pathway-mobile-item--final">
+            <span class="milestone-dot milestone-dot--blue"></span>
+            <div>
+              <p class="pathway-mobile-title">Industry Internship</p>
+              <p class="pathway-mobile-week">Only for winners</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="testimonials-inner">
+        <button class="testimonial-btn testimonial-btn--prev" id="testimonialPrev" aria-label="Previous testimonial">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <div class="testimonials-wrapper" aria-live="polite">
+          <div class="testimonials-track" id="testimonialsTrack">
+
+            <div class="testimonial-slide" role="group" aria-label="Testimonial 1 of 3">
+              <blockquote class="testimonial-quote">
+                &ldquo;Young Comets did not just create space for my dreams, but an urgency for solutions. They
+                bridged
+                the gap between my teenage dreams and tangible solutions.&rdquo;
+              </blockquote>
+              <p class="testimonial-author">— Aarohi Garg, class 12th student</p>
+            </div>
+
+            <div class="testimonial-slide" role="group" aria-label="Testimonial 2 of 3">
+              <blockquote class="testimonial-quote">
+                &ldquo;Young comet felt more like a launchpad than a program. Its not a course its a chance to act
+                experiment and grow.&rdquo;
+              </blockquote>
+              <p class="testimonial-author">— K. Varshik, class 12th student</p>
+            </div>
+
+            <div class="testimonial-slide" role="group" aria-label="Testimonial 3 of 3">
+              <blockquote class="testimonial-quote">
+                &ldquo;The experience is very extraordinary for me, because I overcame my fear of talking to people,
+                thank you so much team Young Comet.&rdquo;
+              </blockquote>
+              <p class="testimonial-author">— Seema Yadav, class 11th student</p>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="testimonial-btn testimonial-btn--next" id="testimonialNext" aria-label="Next testimonial">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <div class="mentors-banner">
+      <img class="mentors-banner__img" src="./assets/Group 42.svg" alt="The Universe of Mentors" draggable="false" />
+      <div class="mentors-banner__text">
+        <h2 class="mentors-banner__title"><img src="./assets/The Universe of Mentors.svg" alt="The Universe of Mentors"
+            draggable="false" /></h2>
+        <p class="mentors-banner__copy">Wide range of mentor support to bring your ideas to life. The mentorship
+          universe provides real-world exposure and guidance in problem solving, aimed to bridge the gap between
+          school
+          lessons and the world.</p>
+      </div>
+    </div>
+
+    <!-- ===== Competency Slider Section ===== -->
+    <section class="comp-slider-section" aria-label="Future-ready Competencies">
+      <div class="comp-slider-inner">
+        <button class="comp-slider-btn comp-slider-btn--prev" id="compPrev" aria-label="Previous slide">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <div class="comp-slider-wrapper">
+          <div class="comp-slider-track" id="compSliderTrack">
+
+            <!-- Slide 1 -->
+            <div class="comp-slide" role="group" aria-label="Slide 1 of 4">
+              <div class="competency-frame">
+                <div class="competency-copy">
+                  <p class="competency-label">Explore</p>
+                  <div class="competency-ribbon-wrap">
+                    <img src="./assets/Rectangle 19.svg" alt="" class="competency-ribbon-bg" draggable="false" />
+                    <h3 class="competency-ribbon-title">Future-ready Competencies</h3>
+                  </div>
+                  <p class="competency-body">
+                    Acquire <span class="hl">Data Numeracy</span>, <span class="hl">Communication</span>, <span
+                      class="hl">Entre(Solo)preneurship</span>,
+                    and <span class="hl">Systems &amp; Design Thinking</span> alongside AI fluency in problem
+                    solving. These foundational competencies are vital to decode the
+                    modern economy and build the mindset required to lead.
+                  </p>
+                </div>
+                <div class="competency-visual">
+                  <img src="./assets/Group 64.svg" alt="Future-ready competencies visual cards"
+                    class="competency-visual__img" draggable="false" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Experience -->
+            <div class="comp-slide" role="group" aria-label="Slide 2 of 4">
+              <div class="competency-frame">
+                <div class="competency-copy">
+                  <p class="competency-label">Experience</p>
+                  <div class="competency-ribbon-wrap">
+                    <img src="./assets/Rectangle 19.svg" alt="" class="competency-ribbon-bg" draggable="false" />
+                    <h3 class="competency-ribbon-title">Experiential and Peer Learning</h3>
+                  </div>
+                  <p class="competency-body">
+                    Engage in hands-on, experiential learning with a <span class="hl">community of
+                      aspiring entrepreneurs</span>. This interactive environment ensures
+                    <span class="hl">P2P(peer-to-peer)</span> learning is active and immersive,
+                    allowing you to build projects with real impact. Curated activities inspired by
+                    <span class="hl">Stanford d.school</span> for immersive learning sets our comets apart.
+                  </p>
+                </div>
+                <div class="competency-visual competency-visual--top">
+                  <img src="./assets/Mockup.svg" alt="Experiential learning mockup" class="competency-visual__img"
+                    draggable="false" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Ideate -->
+            <div class="comp-slide" role="group" aria-label="Slide 3 of 4">
+              <div class="competency-frame">
+                <div class="competency-copy">
+                  <p class="competency-label">Ideate</p>
+                  <div class="competency-ribbon-wrap">
+                    <img src="./assets/Rectangle 19.svg" alt="" class="competency-ribbon-bg" draggable="false" />
+                    <h3 class="competency-ribbon-title">Solve Real Business Problems</h3>
+                  </div>
+                  <p class="competency-body">
+                    Solve <span class="hl">real-world problem statements</span> sourced from industry
+                    partners and learn to ideate, especially during our intensive Sprint Week. Refine your vision
+                    through
+                    dedicated mentorship
+                    sessions led by professionals and <span class="hl">students from IIMs and IITs</span>.
+                  </p>
+                </div>
+                <div class="competency-visual competency-visual--layered">
+                  <img src="./assets/Group 30.svg" alt="" class="competency-visual__img comp-layer comp-layer--back"
+                    draggable="false" />
+                  <img src="./assets/Group 31.svg" alt="Ideate visual"
+                    class="competency-visual__img comp-layer comp-layer--front" draggable="false" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Implement -->
+            <div class="comp-slide" role="group" aria-label="Slide 4 of 4">
+              <div class="competency-frame">
+                <div class="competency-copy">
+                  <p class="competency-label">Implement</p>
+                  <div class="competency-ribbon-wrap">
+                    <img src="./assets/Rectangle 19.svg" alt="" class="competency-ribbon-bg" draggable="false" />
+                    <h3 class="competency-ribbon-title">Build with Guided Mentorship</h3>
+                  </div>
+                  <p class="competency-body">
+                    Translate ideas into reality through <span class="hl">portfolio projects</span> and
+                    national case competitions. Gain hands-on experience with
+                    <span class="hl">industry partners</span> to implement your solutions, effectively
+                    bridging the gap between student and entrepreneur.
+                  </p>
+                </div>
+                <div class="competency-visual competency-visual--low">
+                  <img src="./assets/Group 33.svg" alt="Implement guided mentorship" class="competency-visual__img"
+                    draggable="false" />
+                </div>
+              </div>
+            </div>
+
+          </div><!-- end comp-slider-track -->
+        </div><!-- end comp-slider-wrapper -->
+
+        <button class="comp-slider-btn comp-slider-btn--next" id="compNext" aria-label="Next slide">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div><!-- end comp-slider-inner -->
+    </section>
+    <!-- ===== End Competency Slider Section ===== -->
+
+    <section class="fomo-section" aria-labelledby="fomo-heading">
+      <div class="fomo-content">
+        <img class="fomo-group55" src="./assets/Group 55.svg"
+          alt="While others wait to grow up, you will be Building Leading winning" draggable="false" />
+        <img class="fomo-deco fomo-deco--3" src="./assets/Hand-Drawn Ink  Brush Strokes.svg" alt="" aria-hidden="true"
+          draggable="false" />
+        <img class="fomo-deco fomo-deco--4" src="./assets/Group 77.svg" alt="" aria-hidden="true" draggable="false" />
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="cta-overlay" aria-hidden="true"></div>
+
+      <div class="cta-wrapper">
+        <div class="cta-frame" aria-hidden="true"></div>
+
+        <div class="cta-card">
+          <p class="cta-label">Young <span class="cta-label-accent">Comet</span></p>
+          <h2 id="cta-heading" class="cta-heading">
+            Become a <span class="cta-heading-accent">Comet</span>
+          </h2>
+          <p class="cta-copy">
+            A Comet isn't the smartest student in the room. A Comet is the one who dares to step out
+            of orbit. Build a relationship with respect to problem solving.
+          </p>
+          <a href="#" class="cta-join-btn">Join the Cohort</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
