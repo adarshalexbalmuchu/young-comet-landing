@@ -263,7 +263,7 @@ main {
   left: 0;
   right: 0;
   z-index: 0;
-  background: url("./assets/Vector.svg") center 412px / 100% 365px no-repeat;
+  background: url("./assets/home/Vector.svg") center 412px / 100% 365px no-repeat;
   pointer-events: none;
 }
 
@@ -678,7 +678,7 @@ main {
 
 .tracks-bg {
   /* Background image path control */
-  background: url("./assets/Rectangle 16.svg") center / cover no-repeat;
+  background: url("./assets/home/Rectangle 16.svg") center / cover no-repeat;
 }
 
 .tracks-overlay {
@@ -1420,7 +1420,7 @@ main {
     top: 213px;
     width: 1200px;
     height: 398px;
-    background: url("./assets/Vector 49.svg") left top / 1200px 398px no-repeat;
+    background: url("./assets/home/Vector 49.svg") left top / 1200px 398px no-repeat;
   }
 
   .pathway-curve path {
@@ -2783,7 +2783,7 @@ main {
 .cta-bg {
   position: absolute;
   inset: 0;
-  background: url("./assets/image 3.svg") center / cover no-repeat;
+  background: url("./assets/home/image 3.svg") center / cover no-repeat;
 }
 
 .cta-overlay {
