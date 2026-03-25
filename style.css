@@ -2780,6 +2780,43 @@ main {
   overflow: hidden;
 }
 
+.cta-desktop-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta-desktop {
+  display: none;
+  position: relative;
+}
+
+.cta-desktop-badge {
+  position: absolute;
+  bottom: 21%;
+  left: 51%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-desktop-badge img {
+  width: 190px;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 641px) {
+  .cta-mobile {
+    display: none;
+  }
+
+  .cta-desktop {
+    display: block;
+  }
+}
+
 .cta-bg {
   position: absolute;
   inset: 0;

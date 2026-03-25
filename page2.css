@@ -159,14 +159,90 @@ body {
   gap: 0;
 }
 
+.page2-desktop {
+  display: none;
+}
+
+.page2-mobile {
+  display: block;
+}
+
 @media (min-width: 641px) {
   .page2-main {
-    max-width: 600px;
+    max-width: 1440px;
+  }
+
+  .page2-mobile {
+    display: none !important;
+  }
+
+  .page2-desktop {
+    display: block !important;
+  }
+
+  .page2-section {
+    width: 100%;
+  }
+
+  .page2-hero-badge {
+    width: 304px;
+    height: 65px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .page2-below-hero {
+    margin-top: -80px;
+  }
+
+  .page2-below-hero-badge {
+    width: 304px;
+    height: 65px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .page2-157-badge {
+    width: 304px;
+    height: 65px;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .page2-eligibility-badge {
+    width: 221px;
+    height: 69px;
+    bottom: 12%;
+    left: 80px;
+  }
+
+  .page2-end-badge-left {
+    width: 236px;
+    height: 69px;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(calc(-100% - 10px));
+  }
+
+  .page2-end-badge-right {
+    width: 236px;
+    height: 69px;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(10px);
   }
 }
 
 .page2-hero {
   position: relative;
+  width: 100%;
+}
+
+.page2-section {
+  width: 100%;
 }
 
 .page2-hero-badge {
