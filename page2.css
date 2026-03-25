@@ -159,6 +159,12 @@ body {
   gap: 0;
 }
 
+@media (min-width: 641px) {
+  .page2-main {
+    max-width: 600px;
+  }
+}
+
 .page2-hero {
   position: relative;
 }
