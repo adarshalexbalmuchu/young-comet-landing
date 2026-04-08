@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Editor's Note";
+  src: url('./assets/Cohort 2/editors-note/EditorsNote-HairlineItalic-iF664322be52ef6.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --bg: #ffffff;
   --text: #0f0f10;
@@ -156,20 +164,28 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0;
+  gap: 40px;
 }
 
 .page2-desktop {
-  display: none;
+  display: none !important;
 }
 
 .page2-mobile {
-  display: block;
+  display: block !important;
 }
 
 @media (min-width: 641px) {
   .page2-main {
     max-width: 1440px;
+    gap: 80px;
+  }
+
+  .page2-hero {
+    padding-top: 8px;
+    width: 92vw !important;
+    margin-left: -12%;
+    margin-right: auto;
   }
 
   .page2-mobile {
@@ -192,8 +208,284 @@ body {
     transform: translate(-50%, -50%);
   }
 
+  .hero-ribbon {
+    bottom: 1.5%;
+    padding: 10px 0;
+    background: transparent;
+  }
+
+  .hero-ribbon-text {
+    font-size: 1.3rem;
+    padding-right: 32px;
+  }
+
   .page2-below-hero {
     margin-top: -80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .below-hero-canvas {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .below-hero-layer {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+  }
+
+  .below-hero-people {
+    left: 0;
+    bottom: 0;
+    height: 55%;
+    width: auto;
+  }
+
+  .below-hero-text {
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: auto;
+  }
+
+  .below-hero-text-wrap {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .below-hero-text-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+  }
+
+  .below-hero-join-link {
+    position: absolute;
+    top: 81.2%;
+    left: 34.1%;
+    width: 31.6%;
+    height: 18.4%;
+    z-index: 20;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  .page2-below-hero .page2-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  /* ---- "What you'll walk away with" section ---- */
+  .page2-what-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .what-canvas {
+    width: 100%;
+    background: #fff;
+    display: flex !important;
+    align-items: stretch;
+  }
+
+  .what-left {
+    flex: 0 0 40%;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    overflow: hidden;
+    background: #FFF0E4;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .what-illustrations {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .what-right {
+    flex: 1;
+    padding: 60px 60px 80px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .what-heading {
+    width: 100%;
+    max-width: 606px;
+    height: auto;
+    display: block;
+  }
+
+  .what-content {
+    width: 100%;
+    max-width: 672px;
+    height: auto;
+    display: block;
+  }
+
+  /* ==================== e2i2 / Stanford Section ==================== */
+  .page2-157 {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .e2i2-canvas {
+    width: 100%;
+    min-height: 80vh;
+    display: flex !important;
+    align-items: stretch;
+    background: #fff;
+  }
+
+  .e2i2-left {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px 60px 240px;
+    gap: 40px;
+  }
+
+  .e2i2-pill {
+    display: inline-block;
+    width: fit-content;
+    background: #FFD9B3;
+    color: #f26522;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 8px 22px;
+    border-radius: 20px;
+  }
+
+  .e2i2-heading {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f26522;
+    margin: 0;
+  }
+
+  .e2i2-heading em {
+    font-family: "Editor's Note", 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 100;
+    color: #f26522;
+  }
+
+  .e2i2-heading strong {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 800;
+    color: #f26522;
+  }
+
+  .e2i2-body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.2rem;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #333;
+    margin: 0;
+    max-width: 540px;
+    text-align: justify;
+  }
+
+  .e2i2-btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 32px;
+    background: #f26522;
+    color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .e2i2-btn:hover {
+    background: #d4551a;
+  }
+
+  .e2i2-right {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+
+  .e2i2-illustration {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+    display: block;
+  }
+
+  /* ==================== Programme Structure Section ==================== */
+  .page2-programme {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    margin-top: 60px;
+    padding: 0 40px 0 260px;
+  }
+
+  .page2-programme .page2-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ==================== Application Timeline Section ==================== */
+  .page2-timeline {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    margin-top: 60px;
+    padding: 0 40px 0 260px;
+  }
+
+  .page2-timeline .page2-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ==================== Eligibility / Final Section ==================== */
+  .page2-eligibility {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    margin-top: 60px;
+    padding: 0 40px 0 260px;
+  }
+
+  .page2-eligibility .page2-img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .page2-below-hero-badge {
@@ -239,10 +531,146 @@ body {
 .page2-hero {
   position: relative;
   width: 100%;
+  overflow: hidden;
+}
+
+/* ==================== Hero Canvas (Desktop Layered) ==================== */
+.hero-canvas {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1445 / 760;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+}
+
+.hero-layer {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.hero-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-decor {
+  left: 0.21%;
+  top: 20.92%;
+  width: 96.47%;
+  height: auto;
+}
+
+.hero-content {
+  left: 20.83%;
+  top: 16.18%;
+  width: 57.92%;
+  height: auto;
+}
+
+.hero-comet {
+  left: 2.42%;
+  top: 3.29%;
+  width: 8.86%;
+  height: auto;
+}
+
+.hero-ribbon-strip {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.hero-pastel-ribbon {
+  left: -2%;
+  bottom: 3%;
+  width: 104%;
+  height: auto;
+  z-index: 4;
+  transform: rotate(1deg);
+}
+
+.hero-washington {
+  right: -6%;
+  bottom: -2%;
+  width: 18%;
+  height: auto;
+  z-index: 6;
+}
+
+.hero-apply-link {
+  position: absolute;
+  left: 43.05%;
+  top: 48.55%;
+  width: 13.42%;
+  height: 7.63%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* ==================== Hero Ribbon Marquee ==================== */
+.hero-ribbon {
+  position: absolute;
+  bottom: 7%;
+  left: -2%;
+  width: 104%;
+  background: transparent;
+  overflow: hidden;
+  padding: 6px 0;
+  z-index: 5;
+  pointer-events: none;
+  transform: rotate(1.8deg);
+}
+
+@media (max-width: 640px) {
+  .hero-ribbon {
+    bottom: 8%;
+  }
+}
+
+.hero-ribbon-track {
+  display: flex;
+  width: max-content;
+  animation: ribbonScroll 24s linear infinite;
+}
+
+.hero-ribbon-text {
+  font-family: 'Playfair Display', 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #000;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  flex-shrink: 0;
+}
+
+.hero-ribbon-text em {
+  font-style: italic;
+  color: #f26522;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@keyframes ribbonScroll {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .page2-section {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .page2-hero-badge {
@@ -273,22 +701,38 @@ body {
   position: relative;
 }
 
-.page2-eligibility-badge {
+.page2-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   position: absolute;
-  width: 114px;
-  height: 31px;
+  bottom: 100px;
+  left: 200px;
+  right: 0;
   z-index: 10;
-  bottom: 55px;
-  left: 55px;
-  cursor: pointer;
-  text-decoration: none;
 }
 
-.page2-eligibility-badge img {
-  width: 100%;
-  height: 100%;
-  display: block;
+.page2-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: #f26522;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
 }
+
+.page2-btn:hover {
+  background: #d4551a;
+}
+
 
 .page2-157 {
   position: relative;
