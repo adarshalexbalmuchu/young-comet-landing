@@ -177,14 +177,12 @@ body {
 
 @media (min-width: 641px) {
   .page2-main {
-    max-width: 1440px;
+    max-width: 100%;
     gap: 80px;
   }
 
   .page2-hero {
     padding-top: 8px;
-    width: 100vw !important;
-    margin-left: calc(-50vw + 50%);
   }
 
   .page2-mobile {
@@ -224,8 +222,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
   }
 
   .below-hero-canvas {
@@ -289,8 +285,7 @@ body {
 
   /* ---- "What you'll walk away with" section ---- */
   .page2-what-section {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
   }
 
   .what-canvas {
@@ -344,8 +339,7 @@ body {
 
   /* ==================== e2i2 / Stanford Section ==================== */
   .page2-157 {
-    width: 100vw !important;
-    margin-left: calc(-50vw + 50%);
+    width: 100% !important;
   }
 
   .e2i2-canvas {
@@ -447,8 +441,7 @@ body {
 
   /* ==================== Programme Structure Section ==================== */
   .page2-programme {
-    width: 100vw !important;
-    margin-left: calc(-50vw + 50%);
+    width: 100% !important;
     margin-top: 60px;
     padding: 0 40px 0 clamp(40px, 15vw, 260px);
   }
@@ -461,8 +454,7 @@ body {
 
   /* ==================== Application Timeline Section ==================== */
   .page2-timeline {
-    width: 100vw !important;
-    margin-left: calc(-50vw + 50%);
+    width: 100% !important;
     margin-top: 60px;
     padding: 0 40px 0 clamp(40px, 15vw, 260px);
   }
@@ -475,8 +467,7 @@ body {
 
   /* ==================== Eligibility / Final Section ==================== */
   .page2-eligibility {
-    width: 100vw !important;
-    margin-left: calc(-50vw + 50%);
+    width: 100% !important;
     margin-top: 60px;
     padding: 0 40px 0 clamp(40px, 15vw, 260px);
   }
