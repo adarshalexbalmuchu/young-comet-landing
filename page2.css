@@ -154,14 +154,6 @@ body {
   .header-menu-btn.open span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
-
-  .hero-ribbon {
-    display: none;
-  }
-
-  .page2-btn-group {
-    display: none;
-  }
 }
 
 /* ==================== Page 2 Main ==================== */
@@ -836,4 +828,14 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+@media (max-width: 640px) {
+  .hero-ribbon {
+    display: none !important;
+  }
+
+  .page2-btn-group {
+    display: none !important;
+  }
 }
