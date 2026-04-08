@@ -183,9 +183,8 @@ body {
 
   .page2-hero {
     padding-top: 8px;
-    width: 92vw !important;
-    margin-left: -12%;
-    margin-right: auto;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
   }
 
   .page2-mobile {
@@ -323,7 +322,7 @@ body {
 
   .what-right {
     flex: 1;
-    padding: 60px 60px 80px 160px;
+    padding: 60px 40px 80px clamp(40px, 10vw, 160px);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -362,7 +361,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 40px 60px 240px;
+    padding: 60px 40px 60px clamp(40px, 15vw, 240px);
     gap: 40px;
   }
 
@@ -380,7 +379,7 @@ body {
 
   .e2i2-heading {
     font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 4rem;
+    font-size: clamp(2.2rem, 3.2vw, 4rem);
     font-weight: 700;
     line-height: 1.2;
     color: #f26522;
@@ -451,7 +450,7 @@ body {
     width: 100vw !important;
     margin-left: calc(-50vw + 50%);
     margin-top: 60px;
-    padding: 0 40px 0 260px;
+    padding: 0 40px 0 clamp(40px, 15vw, 260px);
   }
 
   .page2-programme .page2-img {
@@ -465,7 +464,7 @@ body {
     width: 100vw !important;
     margin-left: calc(-50vw + 50%);
     margin-top: 60px;
-    padding: 0 40px 0 260px;
+    padding: 0 40px 0 clamp(40px, 15vw, 260px);
   }
 
   .page2-timeline .page2-img {
@@ -479,7 +478,7 @@ body {
     width: 100vw !important;
     margin-left: calc(-50vw + 50%);
     margin-top: 60px;
-    padding: 0 40px 0 260px;
+    padding: 0 40px 0 clamp(40px, 15vw, 260px);
   }
 
   .page2-eligibility .page2-img {
@@ -704,21 +703,29 @@ body {
 .page2-btn-group {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 12px;
   position: absolute;
-  bottom: 100px;
-  left: 200px;
+  bottom: 60px;
+  left: 0;
   right: 0;
   z-index: 10;
 }
 
+@media (min-width: 641px) {
+  .page2-btn-group {
+    bottom: 100px;
+    left: clamp(40px, 15vw, 260px);
+    gap: 20px;
+  }
+}
+
 .page2-btn {
   display: inline-block;
-  padding: 14px 40px;
+  padding: 10px 24px;
   background: #f26522;
   color: #fff;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-weight: 700;
   border-radius: 6px;
   text-decoration: none;
@@ -727,6 +734,13 @@ body {
   cursor: pointer;
   transition: background 0.2s;
   white-space: nowrap;
+}
+
+@media (min-width: 641px) {
+  .page2-btn {
+    padding: 14px 40px;
+    font-size: 1.05rem;
+  }
 }
 
 .page2-btn:hover {
