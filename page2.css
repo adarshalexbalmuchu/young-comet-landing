@@ -358,7 +358,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 40px 60px clamp(40px, 15vw, 240px);
+    padding: 60px 40px 60px clamp(40px, 8vw, 160px);
     gap: 40px;
   }
 
@@ -446,7 +446,7 @@ body {
   .page2-programme {
     width: 100% !important;
     margin-top: 60px;
-    padding: 0 40px 0 clamp(40px, 15vw, 260px);
+    padding: 0 clamp(40px, 8vw, 160px);
   }
 
   .page2-programme .page2-img {
@@ -459,7 +459,7 @@ body {
   .page2-timeline {
     width: 100% !important;
     margin-top: 60px;
-    padding: 0 40px 0 clamp(40px, 15vw, 260px);
+    padding: 0 clamp(40px, 8vw, 160px);
   }
 
   .page2-timeline .page2-img {
@@ -472,7 +472,7 @@ body {
   .page2-eligibility {
     width: 100% !important;
     margin-top: 60px;
-    padding: 0 40px 0 clamp(40px, 15vw, 260px);
+    padding: 0 clamp(40px, 8vw, 160px);
   }
 
   .page2-eligibility .page2-img {
@@ -708,7 +708,7 @@ body {
 @media (min-width: 641px) {
   .page2-btn-group {
     bottom: 100px;
-    left: clamp(40px, 15vw, 260px);
+    left: clamp(40px, 8vw, 160px);
     gap: 20px;
   }
 }
