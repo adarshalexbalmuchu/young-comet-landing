@@ -178,11 +178,14 @@ body {
 @media (min-width: 641px) {
   .page2-main {
     max-width: 100%;
+    margin: 0 auto;
     gap: 80px;
+    align-items: stretch;
   }
 
   .page2-hero {
     padding-top: 8px;
+    width: 100%;
   }
 
   .page2-mobile {
