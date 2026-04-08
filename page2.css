@@ -446,7 +446,6 @@ body {
   .page2-programme {
     width: 100% !important;
     margin-top: 60px;
-    padding: 0 clamp(40px, 8vw, 160px);
   }
 
   .page2-programme .page2-img {
@@ -459,7 +458,6 @@ body {
   .page2-timeline {
     width: 100% !important;
     margin-top: 60px;
-    padding: 0 clamp(40px, 8vw, 160px);
   }
 
   .page2-timeline .page2-img {
@@ -472,7 +470,6 @@ body {
   .page2-eligibility {
     width: 100% !important;
     margin-top: 60px;
-    padding: 0 clamp(40px, 8vw, 160px);
   }
 
   .page2-eligibility .page2-img {
@@ -708,7 +705,7 @@ body {
 @media (min-width: 641px) {
   .page2-btn-group {
     bottom: 100px;
-    left: clamp(40px, 8vw, 160px);
+    left: 0;
     gap: 20px;
   }
 }
